@@ -1,0 +1,448 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'League Spartan', sans-serif;
+    overflow-x: hidden;
+}
+
+body{
+    color: white;
+    background: black;
+    font-size: 2rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100vw;
+}
+
+.menu{
+    display: flex;
+    padding: min(32px, 1%);
+    width: 100vw;
+    justify-content: center;
+    font-family: 'Poiret One', cursive;
+    margin: 0 auto;
+}
+
+.img-bg{        
+    position: absolute;
+    z-index: -1000;
+    left: 0;
+    filter: brightness(20%);
+    max-width: 100%;
+}
+
+.img-bg img{
+    width: 100%;
+}
+
+.left-menu, .right-menu{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.option a{
+    text-decoration: none;
+    color: white;
+    font-size: min(2rem, 3vw);
+}
+
+.option{
+    transition: ease-in-out 0.5s;
+}
+
+.option:hover{
+    transform: scale(110%);
+}
+
+.header{
+    margin-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: min(2.6rem, 2.6vw);
+    letter-spacing: 1px;
+    line-height: min(3rem, 4vw);
+    font-weight: 500;
+    width: 36em;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.header span{
+    display: block;
+}
+
+.quote{
+    display: flex;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 3em;
+    padding-top: 2em;
+}
+
+.quote-left, .quote-right{
+    white-space: pre-line;
+    font-weight: bold;
+    font-size: min(4.5rem, 4.5vw);
+    letter-spacing: min(2rem, 2vw);
+    line-height: min(7rem, 7vw);
+    padding: 1rem;
+}
+
+.quote-left{
+    flex: 0.45;
+    text-align: start;
+    border-right: solid 3px white;
+}
+
+.quote-right{
+    flex: 0.55;
+    margin-top: 2em;
+    text-align: end;
+}
+
+.about{
+    text-align: center;
+    width: 92%;
+    margin-bottom: 3em;
+}
+
+
+.about-title, .artists-title, .recent-title{
+    font-size: min(2.4rem, 3vw);
+    font-weight: 100;
+    padding: 2rem;
+}
+
+.about-content{
+    white-space: pre-line;
+    font-size: min(2.4rem, 3vw);
+    font-weight: 100;
+    line-height: 1.3em;
+}
+
+.img-bg-two{
+    position: absolute;
+    top: 150%;
+    left: 0;
+    z-index: -1000;
+    filter: brightness(20%);
+}
+
+.img-bg-two img{
+    width: 100%;
+    height: 100%;
+}
+
+.artists-title{
+    padding: 2em;
+}
+
+.artists{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 4em;
+}
+
+.artist{
+    width: min(400px, 24vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+    margin: 2em auto;
+}
+
+.artists img{
+    filter: grayscale(100%);
+    width: 100%;
+    transition: ease-in-out 0.5s;
+}
+
+.artists img:hover{
+    transform: scale(102%);
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+.artist-names{
+    text-decoration: none;
+    color: white;
+    font-size: min(2.4rem, 2.4vw);
+    margin-top: 0.5em;
+    transition: ease-in-out 0.5s;
+}
+
+.artist-names:hover{
+    transform: scale(105%);
+}
+
+.recent-title{
+    text-align: center;
+    margin: 1em;
+    margin-bottom: 2em;
+}
+
+.tattoo-grid-container{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tattoo-img{
+    display: flex;
+    place-items: center;
+    width: 28vw;
+    height: 28vw;
+}
+
+.tattoo-img img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    transition: ease-in-out 0.5s;
+}
+
+.tattoo-img img:hover{
+    filter: grayscale(0%);
+}
+
+.contact{
+    background-image: url(img/about-background.png);
+    background-size: cover;
+    width: 100vw;
+    color: white;
+}
+
+.contact-content{
+    font-size: min(2rem, 2vw);
+    padding: 4em;
+    line-height: min(4em, 4vw);
+}
+
+.contact-content a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact-title{
+    font-weight: 400;
+    letter-spacing: min(12px, .4vw);
+    padding-bottom: 1rem;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding-bottom: 1rem;
+}
+
+.social-icon{
+    height: min(50px, 4vw);
+}
+
+.more{
+    display: flex;
+    color: black;
+    gap: min(5em, 5vw);
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.info p{
+    font-family: 'Poiret One', cursive;
+    margin-top: 0.5em;
+    font-size: min(1.4rem, 1.4vw);
+    letter-spacing: 1px;
+    font-weight: 800;
+    color:white;
+}
+
+.open{
+    font-family: 'Poiret One', cursive;
+    margin-top: 2em;
+    color: white;
+    letter-spacing: 3px;
+    padding-bottom: 2rem;
+    font-size: min(3rem, 2.8vw);
+}
+
+.home-button{
+    position: absolute;
+    transition: ease-in-out 0.5s;
+}
+
+.home-button:hover{
+    filter: brightness(150%);
+    cursor: pointer;
+}
+
+/*regulamin.css / pielegnacja.css / piercing.css / kontact.css*/
+
+.tou-container, .care-container, .pierc-container, .cont-container{
+    width: 100vw;
+    background: #5050503b;
+    padding: 2.2em;
+}
+
+.tou-title, .care-title, .pierc-title, .cont-title{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-weight: 400;
+    font-size: 2em;
+}
+
+.tou-content, .care-content, .pierc-content{
+    font-family: 'Poiret One', cursive;
+    font-weight: 100;
+    text-align: center;
+    white-space: pre-line;
+    font-size: 1.3rem;
+    line-height: 1.8em;
+}
+
+.care-container, .pierc-container, .cont-container{
+    background-image: url("img/logo-background.png");
+    background-color: rgba(0, 0, 0, 0.473);
+    background-repeat: no-repeat;
+}
+
+.care-content{
+    margin: 2em auto;
+    line-height: 2em;
+    max-width: 30em;
+    margin-bottom: 4em;
+}
+
+/* piercing.css */
+
+.pierc-content{
+    display: flex;
+    width: 100vw;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 2.6em;
+}
+
+.pierc-content-left{
+    flex: 0.2;
+}
+
+.pierc-content-right{
+    margin-top: 2rem;
+    margin-left: 7%;
+    flex: 0.4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pierc-desc{
+    text-align: start;
+    font-size: 2rem;
+    letter-spacing: 4px;
+    line-height: 1.5em;
+}
+
+.pierc-flex-container{
+    display: flex;
+    margin-top: 2em;
+    gap: 1rem;
+}
+
+.pierc-flex-container img{
+    width: 250px;
+    object-fit: cover;
+}
+
+.pierc-price-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+    font-size: 1rem;
+    max-height: 600px;
+    column-gap: 5rem;
+    line-height: 2em;
+}
+
+.pierc-price-list-options{
+    display: flex;
+    flex-direction: column;
+    list-style-type: '- ';
+}
+
+/* kontakt.css */
+
+.cont-content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cont-desc{
+    font-family: 'Poiret One', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: space-between;
+    height: 23em;
+    white-space: pre-line;
+    letter-spacing: 5px;
+}
+
+.contact-social a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.cont-map{
+    margin-left: 5em;
+}
+
+.map{
+    width: auto;
+    max-width: 700px;
+	height: auto;
+	margin: 5em auto;
+	overflow: hidden;
+	border: 10px solid #EEE5E5;
+    position: relative;
+	} 
+
+    .map img{
+	width: 100%;
+	height: 100%;
+	margin-bottom: -15px;
+	transition: all 0.3s ease-out;
+	position: relative;
+	z-index: 2;
+}
+.map:hover img {
+	transform: scale(1.2, 1.2);
+	z-index: 9;
+}
+

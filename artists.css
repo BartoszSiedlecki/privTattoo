@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'League Spartan', sans-serif;
+    overflow-x: hidden;
+}
+
+body{
+    color: white;
+    background: black;
+    font-size: 2rem;
+}
+
+.container{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100vw;
+}
+
+.home-button{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    transition: ease-in-out 0.5s;
+}
+
+.home-button:hover{
+    filter: brightness(150%);
+    cursor: pointer;
+}
+
+.artist-bg{
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    z-index: -10000;
+}
+
+.artist, .tooling{
+    display: flex;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.artist-img, .tool-img{
+    margin-top: 1em;
+    flex: 0.25;
+}
+
+.artist-img img{
+    width: 300px;
+    object-fit:fill;
+}
+
+.artist-info, .tool-info{
+    flex: 0.50;
+    text-align: center;
+}
+
+.artist-title, .tool-title{
+    margin-bottom: 1em;
+    font-size: 52px;
+    font-weight: 400;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.artist-desc, .tool-desc{
+    font-family: 'Poiret One', cursive;
+    font-size: 24px;
+    line-height: 2em;
+    letter-spacing: 4px;
+}
+
+.contact{
+    font-family: 'Poiret One', cursive;
+    display: flex;
+    margin-top: 4em;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 100px;
+    width: 70%;
+    margin-left: 3em;
+    
+}
+
+.contact-component a {
+    text-decoration: none;
+    color: white;
+}
+
+.grid-container{
+    margin-top: 8em;
+    display: grid;
+    width: 100vw;
+    justify-content: center;
+    gap: 2em;
+    row-gap: 5em;
+    grid-template-columns: repeat(auto-fill, 500px);
+    margin-left: 5em;
+}
+
+.tattoo-pic{
+    width: 400px;
+    height: 400px;
+}
+
+.tattoo-pic img{
+    width: 400px;
+    height: 400px;
+    transition: ease-in-out 0.5s;
+}
+
+.tattoo-pic img:hover{
+    transform: scale(1.2);
+}
+
+.tooling{
+    margin-top: 10em;
+}
+
+.tool-img img{
+    position: absolute;
+    z-index: -10000;
+    width: 400px;
+    height: 400px;
+}
