@@ -24,6 +24,10 @@ body{
     width: 100vw;
 }
 
+.mobile-menu{
+    display: none;
+}
+
 .menu{
     display: flex;
     padding: min(32px, 1%);
@@ -70,7 +74,7 @@ body{
     margin-top: 15px;
     text-align: center;
     text-transform: uppercase;
-    font-size: min(2.6rem, 2.6vw);
+    font-size: min(2.6rem, 3.5vw);
     letter-spacing: 1px;
     line-height: min(3rem, 4vw);
     font-weight: 500;
@@ -296,6 +300,33 @@ body{
     filter: brightness(150%);
     cursor: pointer;
 }
+
+@media only screen and (max-width: 800px) {
+    .left-menu, .right-menu{
+        display: none;
+    }
+
+    .mobile-menu{
+        display: flex;
+        position: absolute;
+        top: min(3rem, 3vw);
+        left: min(4rem, 5vw);
+    }
+
+    .header{
+        font-size: 4vw;
+    }
+
+    .hamburger{
+        background: none;
+        border: none;
+        color: white;
+        font-size: min(2rem, 5vw);
+        font-weight: 600;
+        transform: rotate(90deg);
+        cursor: pointer;
+    }
+  }
 
 /*regulamin.css / pielegnacja.css / piercing.css / kontact.css*/
 
