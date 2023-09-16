@@ -326,6 +326,44 @@ body{
         transform: rotate(90deg);
         cursor: pointer;
     }
+
+    .artists-title{
+        padding: 100px;
+    }
+
+    .artists{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px;
+    }
+
+    .artist{
+        position: absolute;
+        box-shadow: 0px 0px 10px .1px white;
+        transition: box-shadow ease-in-out .5s;
+    }
+
+    .artist:hover{
+        box-shadow: 0px 0px 10px 5px white;
+    }
+
+    .artist-one{
+        transform: translate(-140px, -20px);
+    }
+
+    .artist-two{
+        z-index: 10;
+    }
+
+    .artist-three{
+        transform: translate(140px, -20px);
+    }
+
+    .artist-names{
+        display: none;
+    }
   }
 
 /*regulamin.css / pielegnacja.css / piercing.css / kontact.css*/
