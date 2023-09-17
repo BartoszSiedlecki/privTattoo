@@ -326,74 +326,6 @@ body{
     cursor: pointer;
 }
 
-@media only screen and (max-width: 800px) {
-    .left-menu, .right-menu{
-        display: none;
-    }
-
-    .mobile-menu{
-        display: flex;
-        position: absolute;
-        top: min(3rem, 3vw);
-        left: min(4rem, 5vw);
-    }
-
-    .header{
-        font-size: 4vw;
-    }
-
-    .hamburger{
-        background: none;
-        border: none;
-        color: white;
-        font-size: min(2rem, 5vw);
-        font-weight: 600;
-        transform: rotate(90deg);
-        cursor: pointer;
-    }
-
-    .artists-title{
-        padding: 100px;
-    }
-
-    .artists{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 100px;
-    }
-
-    .artist{
-        position: absolute;
-        box-shadow: 0px 0px 10px .1px white;
-        transition: box-shadow ease-in-out .5s;
-    }
-
-    .artist:hover{
-        box-shadow: 0px 0px 10px 5px white;
-    }
-
-    .artist-one{
-        transform: translate(-140px, -20px);
-    }
-
-    .artist-two{
-        z-index: 10;
-    }
-
-    .artist-three{
-        transform: translate(140px, -20px);
-    }
-
-    .artist-names{
-        display: none;
-    }
-
-    
-
-  }
-
 /*regulamin.css / pielegnacja.css / piercing.css / kontact.css*/
 
 .tou-container, .care-container, .pierc-container, .cont-container{
@@ -543,3 +475,170 @@ body{
 	z-index: 9;
 }
 
+@media only screen and (max-width: 800px) {
+    .left-menu, .right-menu{
+        display: none;
+    }
+
+    .mobile-menu{
+        display: flex;
+        position: absolute;
+        top: min(3rem, 3vw);
+        left: min(4rem, 5vw);
+    }
+
+    .header{
+        font-size: 4vw;
+    }
+
+    .hamburger{
+        background: none;
+        border: none;
+        color: white;
+        font-size: min(2rem, 5vw);
+        font-weight: 600;
+        transform: rotate(90deg);
+        cursor: pointer;
+    }
+
+    .artists-title{
+        padding: 100px;
+    }
+
+    .artists{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px;
+    }
+
+    .artist{
+        position: absolute;
+        box-shadow: 0px 0px 10px .1px white;
+        transition: box-shadow ease-in-out .5s;
+    }
+
+    .artist:hover{
+        box-shadow: 0px 0px 10px 5px white;
+    }
+
+    .artist-one{
+        transform: translate(-140px, -20px);
+    }
+
+    .artist-two{
+        z-index: 10;
+    }
+
+    .artist-three{
+        transform: translate(140px, -20px);
+    }
+
+    .artist-names{
+        display: none;
+    }
+
+    .pierc-title{
+        margin: 0 auto;
+    }
+
+    .pierc-container{
+        width: 100vw;
+        padding: 1rem;
+        padding-top: 2rem;
+    }
+
+    .pierc-container img{
+        width: min(8vw);
+    }
+
+    .pierc-content{
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 2.6em;
+    }
+
+    .pierc-content-left{
+        width: 100%;
+    }
+
+    .pierc-content-right{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        align-items: center;
+        padding-top: 6rem;
+    }
+
+    .pierc-flex-container{
+        width: 100%;
+    }
+
+    .pierc-desc{
+        font-size: min(5vw);
+    }
+
+    .pierc-flex-container img{
+        width: max(30%, 8rem)
+    }
+
+    .pierc-price-list{  
+        font-size: 1rem;
+        max-height: 10000px;
+        column-gap: 5rem;
+        line-height: 2em;
+    }
+
+    .pierc-price-list{
+        margin: 0;
+        padding: 0;
+        width: 50%;
+        left: 0;
+    }
+
+    .pierc-title{
+        font-size: min(10vw, 14rem);
+    }
+
+    .cont-title{
+        padding-top: 6rem;
+    }
+
+    .cont-container{
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    .cont-content{
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+
+    .cont-desc{
+        flex-direction: column;
+        width: 100%;
+        font-size: 4vw;
+    }
+
+    .care-container{
+        padding: 2rem;
+    }
+
+    .care-title{
+        font-size: 8vw;
+        padding-top: 6rem;
+    }
+
+    .tou-container{
+        padding: 2rem;
+    }
+
+    .tou-title{
+        font-size: 8vw;
+        padding-top: 6rem;
+    }
+}
